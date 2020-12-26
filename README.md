@@ -24,30 +24,38 @@ The provided files are as follows:
 
 Useful functions and classes for running the master program
 
-2. polya.xyz
+2. roulette.conf
+
+Configuration script for simulation options.
+
+3. polya.xyz
 
 Coordinates of a poly alanine protein segment. Used as input for the specification of the spin system.
 
-3. RNG.inp
+4. RNG.inp
 
 Input script for parameter search ranges for every parameter in the pulse sequence to be optimized. See (Lapin, JMR 106641, 2020) for details.
 
-4. sym.inp
+5. sym.inp
 
 Input script for symmetry restraints used in the paramter search. See (Lapin, JMR 106641, 2020) for details.
 
-5. roulette.py
+6. roulette.py
 
 GPU version of the master program for running the MCSA search. Uses python's cupy library to run matrix multiplications on GPU.
 
-6. plotroulette.py
+7. plotroulette.py
 
 GPU version of the plotting program. Runs using output pulse sequences of roulette.py. Uses python's cupy library. 
 
-7. roulettenp.py
+8. roulettenp.py
 
 CPU version of the master program. Cannot be used for de novo search due to practical speed limitations.
 
-8. plotnp.py
+9. plotnp.py
 
 CPU version of the plotting program. Can run on output from either GPU or CPU version of the master program.
+
+10. createps.py
+
+Python script to turn optimized sequences into TopSpin input for NMR spectrometer.
