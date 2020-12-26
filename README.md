@@ -14,8 +14,8 @@ Updated program:
 
 Lapin, J., Nevzorov, A.A. (2020) Computer-Generated Pulse Sequences for 1H-15N and 1Hα-13Cα Separated Local Field Experiments, Journal of Magnetic Resonance, Journal of Magnetic Resonance, 317, 106794
 
-The program was primarily run in an anaconda environment. There are two versions of the program, 1 that is specificially written to split calculations
-up between two GPUs (roulette.py, plotroulette.py), and the other which is written for CPU/Numpy library (roulettenp.py, plotnp.py). It is not recommended 
+The program was run in an anaconda environment. There are two versions of the program, 1 that is specificially written to split calculations up 
+between two GPUs (roulette.py, plotroulette.py), and the other which is written for CPU/Numpy library (roulettenp.py, plotnp.py). It is not recommended 
 to run a de novo search on CPU since it is prohibitively slow.
 
 The provided files are as follows:
