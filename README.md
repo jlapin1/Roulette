@@ -28,9 +28,9 @@ Useful functions and classes for running the master program
 
 Configuration script for simulation options.
 
-3. polya.xyz
+3. CA10.xyz
 
-Coordinates of a poly alanine protein segment. Used as input for the specification of the spin system.
+Coordinates of a 10 backbone atoms from a poly-alanine protein segment. Used as input for the specification of the spin system.
 
 4. RNG.inp
 
