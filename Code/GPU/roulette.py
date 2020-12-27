@@ -586,8 +586,8 @@ def sendmsg():
     from email.mime.multipart import MIMEMultipart
     from email.mime.base import MIMEBase
     
-    email_sender = 'jlapin@ncsu.edu'
-    email_receiver = 'jlapin@ncsu.edu'
+    email_sender = 'send.email.com' # insert sender email here
+    email_receiver = 'recipient.email.com' # inserd recipient email here
     subject = 'Simulation'
     msg = MIMEMultipart()
     msg['From'] = email_sender
@@ -608,7 +608,7 @@ def sendmsg():
     
     connection = smtplib.SMTP('smtp.gmail.com', 587)
     connection.starttls()
-    connection.login(email_sender, 'ktckbpspgcldjtfe') # insert password here
+    connection.login(email_sender, 'password') # insert password here
     connection.sendmail(email_sender, email_receiver, text)
     connection.quit()
 
